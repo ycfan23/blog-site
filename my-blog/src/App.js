@@ -1,9 +1,16 @@
 import React from 'react';
+import NavBar from './components/navBar';
+import About from './components/about';
+import SignupForm from './components/signupForm';
+import Articles from './components/articles';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <NavBar />
+      <Articles />
+      <SignupForm />
+      <About />
     </div>
   );
 }
