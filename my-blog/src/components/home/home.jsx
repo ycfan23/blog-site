@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { LinkHeading } from '../../components/Styles/styles'
 
 const Home = () => {
   return (
     <div>
-      <h1>This is Home</h1>
+      <LinkHeading>This is Home</LinkHeading>
     </div>
   )
 }
