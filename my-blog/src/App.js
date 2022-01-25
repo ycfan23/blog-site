@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Home from './components/home';
-import NavBar from './components/navBar';
-import About from './components/about';
-import SignupForm from './components/signupForm';
-import Articles from './components/articles';
-import Error from './components/error';
+import Home from './components/home/home';
+import NavBar from './components/navBar/navBar';
+import About from './components/about/about';
+import SignupForm from './components/signupForm/signupForm';
+import Articles from './components/articles/articles';
+import Error from './components/error/error';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
