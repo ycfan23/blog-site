@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { LinkStyled } from './navBar.styles';
 
 const NavBar = () => {
   return (
     <div>
-      <Link to='/'>Home</Link>
-      <Link to='/articles'>Articles</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/signupform'>Signup Form</Link>
+      <LinkStyled to='/'>Home</LinkStyled>
+      <LinkStyled to='/articles'>Articles</LinkStyled>
+      <LinkStyled to='/about'>About</LinkStyled>
+      <LinkStyled to='/signupform'>Signup Form</LinkStyled>
     </div>
   )
 }

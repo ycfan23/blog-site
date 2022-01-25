@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { LinkHeading } from '../../components/Styles/styles'
+
 
 const About = () => {
   return (
     <div>
-      <h1>This is About Page</h1>
+      <LinkHeading>This is About Page</LinkHeading>
     </div>
   )
 }
