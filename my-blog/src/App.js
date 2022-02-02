@@ -14,9 +14,13 @@ const App = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts')
-      .then(res => setArticles(res.data))
+    getPosts()
   }, [])
+
+  const getPosts = async() => {
+    const result = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    setArticles(result.data)
+  }
 
 
   return (
