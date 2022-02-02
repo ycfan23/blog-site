@@ -1,9 +1,12 @@
 import React from 'react'
+import Article from './Article/article'
 
-const Articles = () => {
+const Articles = ({ articles }) => {
   return (
     <div>
-      <h1>This is Articles Page</h1>
+      {articles.map(article => (
+        <Article article={article} key={article.id}/>
+      ))}
     </div>
   )
 }
