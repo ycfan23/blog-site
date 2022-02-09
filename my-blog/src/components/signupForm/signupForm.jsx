@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const SignupForm = () => {
+  const [page, setPage] = useState(0);
 
+  const FormTitles = ['Sign Up', 'Personal Info', 'Other']
 
   return (
     <div>
@@ -11,7 +13,13 @@ const SignupForm = () => {
           <option value='male'>Male</option>
           <option value='female'>Female</option>
         </select>
-        <button>Submit</button>
+        <div>
+          {FormTitles[page]}
+        </div>
+        <button>Prev</button>
+        <button type='button' onClick={()=> {
+          setPage((currentPage) => currentPage + 1)
+        }}>Next</button>
       </form>
     </div>
   )
