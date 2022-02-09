@@ -1,9 +1,18 @@
 import React from 'react'
 
 const SignupForm = () => {
+
+
   return (
     <div>
-      <h1>This is SignupForm</h1>
+      <form>
+        <input type='text' placeholder='Name' />
+        <select>
+          <option value='male'>Male</option>
+          <option value='female'>Female</option>
+        </select>
+        <button>Submit</button>
+      </form>
     </div>
   )
 }
