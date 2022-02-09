@@ -16,10 +16,20 @@ const SignupForm = () => {
         <div>
           {FormTitles[page]}
         </div>
-        <button>Prev</button>
-        <button type='button' onClick={()=> {
-          setPage((currentPage) => currentPage + 1)
-        }}>Next</button>
+        <button
+          type='button'
+          onClick={()=> {
+            setPage(currentPage => currentPage - 1)
+          }}
+        >Prev</button>
+        <button
+          type='button'
+          disabled={page === FormTitles.length - 1}
+          onClick={()=> {
+          setPage(currentPage => currentPage + 1)
+        }}>
+          Next
+        </button>
       </form>
     </div>
   )
