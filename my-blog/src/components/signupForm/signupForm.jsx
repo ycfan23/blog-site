@@ -18,6 +18,7 @@ const SignupForm = () => {
         </div>
         <button
           type='button'
+          disabled={page === 0}
           onClick={()=> {
             setPage(currentPage => currentPage - 1)
           }}
